@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Clyde - Free Bootstrap 4 Template by Colorlib</title>
+	<title>JonaPortfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
@@ -53,9 +53,24 @@
 						</div>
 						<div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
-								<span class="subheading">Hello! This is Clyde</span>
-								<h1 class="mb-4 mt-3">Creative <span>UI/UX</span> Designer &amp; Developer</h1>
-								<p><a href="#" class="btn btn-primary">Hire me</a> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<span class="subheading">Hello! This is Jona</span>
+								<h1 class="mb-4 mt-3">Game <span>Developer</span> &amp; Creative </h1>
+								<p><button onclick="downloadFile()">DutchCV</button> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+								<script>
+									function downloadFile() {
+										// Create a fake anchor element
+										var anchor = document.createElement('a');
+										
+										// Set the file URL
+										anchor.href = 'CV/JonaDutchCV.png'; // Replace with the actual path to your file
+										
+										// Set the download attribute with the desired file name
+										anchor.download = 'Copie-JonaDutchCV.png'; // Replace with the desired file name
+										
+										// Trigger a click event on the anchor element
+										anchor.click();
+									}
+								</script>
 							</div>
 						</div>
 					</div>
