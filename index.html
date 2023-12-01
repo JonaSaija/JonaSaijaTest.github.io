@@ -56,19 +56,33 @@
 								<span class="subheading">Hello! This is Jona</span>
 								<h1 class="mb-4 mt-3">Game <span>Developer</span> &amp; Creative </h1>
 								<p><button onclick="downloadFile()">DutchCV</button> <a href="#" class="btn btn-primary btn-outline-primary">Download CV</a></p>
+
+							<!-- Add a div for the reCAPTCHA widget -->
+								<div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY"></div>
+
+								<button onclick="verifyAndDownload()">Download File</button>
+
 								<script>
+									function verifyAndDownload() {
+										// Verify the reCAPTCHA response
+										var response = grecaptcha.getResponse();
+
+										if (response.length === 0) {
+											alert('Please complete the reCAPTCHA verification.');
+										} else {
+											// If verification is successful, proceed with the download
+											downloadFile();
+										}
+									}
+
 									function downloadFile() {
-										// Create a fake anchor element
+										// Your existing download file code
 										var anchor = document.createElement('a');
-										
-										// Set the file URL
-										anchor.href = 'CV/JonaDutchCV.png'; // Replace with the actual path to your file
-										
-										// Set the download attribute with the desired file name
-										anchor.download = 'Copie-JonaDutchCV.png'; // Replace with the desired file name
-										
-										// Trigger a click event on the anchor element
+										anchor.href = 'assets/CV/JonaDutchCV.png';
+										anchor.download = 'Copie-JonaDutchCV.png';
+										document.body.appendChild(anchor);
 										anchor.click();
+										document.body.removeChild(anchor);
 									}
 								</script>
 							</div>
