@@ -40,3 +40,4 @@ var isExternalPageOpen = false;
             container.style.display = 'none';
             isExternalPageOpen = false;
         }
+        

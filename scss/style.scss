@@ -28,9 +28,6 @@ $secondary: #a0f669;
 }
 
 
-html {
-	// overflow-x: hidden;
-}
 body {
 	font-family: $font-primary;
 	background: $white;
@@ -903,7 +900,7 @@ h1, h2, h3, h4, h5,
 		}
 	}
 	.media-body{
-		h3{
+		h3{ 
 			font-size: 18px;
 			font-weight: 500;
 		}
@@ -918,10 +915,10 @@ h1, h2, h3, h4, h5,
 			}
 		}
 		h3{
-			color: $white;
+			color: $black;
 		}
 		.media-body{
-			color: rgba(255,255,255,.8);
+			color: rgba(255, 255, 255, 0.8);
 		}
 	}
 }
@@ -1468,7 +1465,6 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
-  -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease-out; 
   -moz-transition: all 0.3s ease-out; 
   -o-transition: all 0.3s ease-out; 
@@ -1641,7 +1637,6 @@ textarea.form-control {
 			a{
 				color: $white;
 			}
-			span{}
 		}
 	}
 	.contact-form{
@@ -1744,8 +1739,6 @@ textarea.form-control {
 		outline: none!important;
 		box-shadow: none!important;
 		font-size: 15px;
-	}
-	#map {
 	}
 }
 

@@ -8882,7 +8882,7 @@ h1, h2, h3, h4, h5,
     .services .icon span {
       font-size: 40px;
       color: #fff; }
-  .services .media-body h3 {
+  .services .media-body h2 {
     font-size: 18px;
     font-weight: 500; }
   .services:hover {
@@ -8892,8 +8892,8 @@ h1, h2, h3, h4, h5,
       margin-left: 20px; }
       .services:hover .icon span {
         color: #b1b493; }
-    .services:hover h3 {
-      color: #fff; }
+    .services:hover h2 {
+      color: #b1b493; }
     .services:hover .media-body {
       color: rgba(255, 255, 255, 0.8); }
 
