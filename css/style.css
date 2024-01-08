@@ -47,9 +47,9 @@
       align-items: center;
       justify-content: center;
       position: sticky;
-      top: 150px; left: 250px; /* change the pos of the iframe to the left, right, up and down*/
-      width: 65%;
-      height: 60vh;
+      top: 50px; left: 125px; /* change the pos of the iframe to the left, right, up and down*/
+      width: 85%;
+      height: 80vh;
       border: none;
   }
   

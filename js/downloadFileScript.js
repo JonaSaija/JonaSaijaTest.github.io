@@ -7,6 +7,7 @@ function downloadDutchFile() {
     anchor.click();
     document.body.removeChild(anchor);
 }
+
 function downloadEnglishFile() {
     // Your existing download file code
     var anchor = document.createElement('a');

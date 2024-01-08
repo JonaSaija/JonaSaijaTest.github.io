@@ -39,5 +39,5 @@ var isExternalPageOpen = false;
             // Close the external page
             container.style.display = 'none';
             isExternalPageOpen = false;
+            console.log("Button clicked. Closing external page.");
         }
-        
